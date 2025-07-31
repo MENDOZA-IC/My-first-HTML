@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
   <title>Jackie Chan</title>
 </head>
 <body>
 
-  <!-- Outer table to hold Image + Description + Form -->
+  <!-- Image and Description side by side -->
   <table>
-    <!-- First row: Image and Description -->
     <tr>
       <td>
         <img src="https://i.ibb.co/DStcCr6/images-4.jpg" alt="Jackie Chan" width="200">
@@ -19,12 +18,16 @@
         </p>
       </td>
     </tr>
+  </table>
 
-    <!-- Second row: Form fields -->
-    <tr>
-      <td valign="top">
-        <!-- Left side of form -->
-        <form>
+  <br>
+
+  <!-- Form with 2 columns side by side -->
+  <form>
+    <table>
+      <tr>
+        <!-- Left Column: Basic Info -->
+        <td valign="top">
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name"><br><br>
 
@@ -36,10 +39,10 @@
 
           <label for="contact">Contact Number:</label><br>
           <input type="text" id="contact" name="contact"><br><br>
-      </td>
+        </td>
 
-      <td valign="top">
-        <!-- Right side of form -->
+        <!-- Right Column: Gender & Hobbies -->
+        <td valign="top">
           <p>Gender:</p>
           <input type="radio" id="male" name="gender" value="male">
           <label for="male">Male</label><br>
@@ -57,10 +60,10 @@
           <label for="tv">Watching TV</label><br>
           <input type="checkbox" id="playing" name="hobby" value="playing">
           <label for="playing">Playing</label><br><br>
-        </form>
-      </td>
-    </tr>
-  </table>
+        </td>
+      </tr>
+    </table>
+  </form>
 
 </body>
 </html>
